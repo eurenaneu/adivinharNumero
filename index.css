@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+:root {
+    --invalidBorder: #ff4747;
+    --invalidColor: #ff474742;
+    --blueColor: rgb(120, 174, 255);
+    --greenColor: rgb(45, 196, 145);
+}
+
+body {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(var(--greenColor), var(--blueColor));
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 120%;
+}
+
+div {
+    display: block;
+}
+
+.container {
+    background: #222222d0;
+    color: rgb(255, 255, 255);
+    padding: 20px 40px;
+    border-radius: 25px;
+    max-width: 420px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.divChute {
+    display: flex;
+    margin: 1em auto;
+    justify-content: center;
+}
+
+#contador {
+    font-weight: normal;
+}
+
+input[type="number"] {
+    padding: 14px;
+    border-radius: 10px;
+    background: none;
+    border: 1px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    margin: 0.5rem;
+    color: white;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+}
+
+#botaoChute {
+    background: white;
+    padding: 20px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 0.5em;
+    transition: 200ms;
+}
+
+#botaoChute:hover {
+    background: var(--blueColor);
+    color: white;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+#botaoChute:active {
+    transform: scale(0.90);
+}
+
+@media screen and (max-width: 520px) {
+    .container {
+        transform: scale(0.85);
+    }
+}

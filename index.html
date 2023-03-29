@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <title>Adivinhe o número</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Adivinhe o Número</h1>
+
+        <div>
+            <p>Eu pensei em um número entre 0 a 100.</p>
+
+            <label for="inputChute">Que número você acha que eu pensei?</label>
+            <div class="divChute">
+                <input type="number" name="inputChute" id="inputChute" min="0" max="100" required>
+                <button type="submit" id="botaoChute">CHUTE!
+            </div>
+
+            <div>
+                <h2>Chutes restantes: <span id="contador"></span></h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
